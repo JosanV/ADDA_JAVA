@@ -1,0 +1,21 @@
+strict graph G {
+  1 [ label="Toledo" color="" ];
+  2 [ label="CiudadReal" color="" ];
+  3 [ label="Albacete" color="" ];
+  4 [ label="Cuenca" color="" ];
+  5 [ label="Guadalajara" color="" ];
+  1 -- 4 [ label="182,500" color="magenta" ];
+  2 -- 3 [ label="198,111" color="magenta" ];
+  2 -- 4 [ label="267,342" color="magenta" ];
+  3 -- 4 [ label="161,784" color="magenta" ];
+  4 -- 5 [ label="135,213" color="magenta" ];
+  1 -- 3 [ label="1000,000" ];
+  1 -- 5 [ label="1000,000" ];
+  2 -- 5 [ label="1000,000" ];
+  3 -- 1 [ label="1000,000" ];
+  3 -- 5 [ label="1000,000" ];
+  5 -- 1 [ label="1000,000" ];
+  5 -- 2 [ label="1000,000" ];
+  5 -- 3 [ label="1000,000" ];
+  1 -- 2 [ label="121,750" color="magenta" ];
+}

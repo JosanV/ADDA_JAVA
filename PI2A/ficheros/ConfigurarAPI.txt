@@ -1,0 +1,14 @@
+Clic derecho sobre el proyecto > “Properties” > “Java Build Path”
+> “Projects” > “Modulepath” > “Add” >
+seleccionar los proyectos “DatosCompartidos” y “ParteComun” > “Ok” > “Apply and Close”
+
+
+En module-info: 
+module SegundoEntregableJAVA {
+	requires partecomun;
+	requires datos_compartidos;
+}
+
+
+Para el jdk:
+Clic derecho sobre el proyecto > “Properties” > “Java Build Path” > Libraries > ModulePath

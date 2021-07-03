@@ -1,0 +1,8 @@
+strict graph G {
+  1 [ label="Huelva" color="green" style="filled" ];
+  2 [ label="Almeria" color="green" style="filled" ];
+  3 [ label="Algeciras" color="green" style="filled" ];
+  4 [ label="Jaen" color="green" style="filled" ];
+  5 [ label="Antequera" color="green" style="filled" ];
+  6 [ label="Cordoba" color="green" style="filled" ];
+}

@@ -1,0 +1,7 @@
+Nº de reinas:4
+Nº de reinas:5
+Nº de reinas:6
+Nº de reinas:7
+Nº de reinas:8
+Nº de reinas:9
+Nº de reinas:10

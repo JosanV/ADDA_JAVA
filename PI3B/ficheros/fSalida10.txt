@@ -1,0 +1,15 @@
+#VERTEX#
+Toledo,Source,0.0,2.0,0.0,Toledo
+Albacete,Sink,0.0,2.0,0.0,Albacete
+CiudadReal,Intermediate,0.0,1.0,0.0,CiudadReal
+Cuenca,Intermediate,0.0,1.0,0.0,Cuenca
+Guadalajara,Intermediate,0.0,1.0,0.0,Guadalajara
+#EDGE#
+Toledo,CiudadReal,0.0,1.0,121.75
+Toledo,Cuenca,0.0,1.0,182.5
+CiudadReal,Albacete,0.0,1.0,198.111
+CiudadReal,Cuenca,0.0,1.0,267.342
+Cuenca,CiudadReal,0.0,1.0,267.342
+Cuenca,Albacete,0.0,1.0,161.784
+Cuenca,Guadalajara,0.0,1.0,135.213
+Guadalajara,Cuenca,0.0,1.0,135.213

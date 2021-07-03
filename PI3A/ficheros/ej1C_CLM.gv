@@ -1,0 +1,19 @@
+strict digraph G {
+  1 [ label="Toledo" color="cyan" style="filled" ];
+  2 [ label="CiudadReal" color="cyan" style="filled" ];
+  3 [ label="Albacete" color="cyan" style="filled" ];
+  4 [ label="Cuenca" color="cyan" style="filled" ];
+  5 [ label="Guadalajara" color="cyan" style="filled" ];
+  1 -> 2 [ label="N-401--121,750 kms" style="bold" ];
+  2 -> 1 [ label="N-401--121,750 kms" style="bold" ];
+  1 -> 4 [ label="N-403--182,500 kms" style="bold" ];
+  4 -> 1 [ label="N-403--182,500 kms" style="bold" ];
+  2 -> 3 [ label="CM-4127--198,111 kms" style="bold" ];
+  3 -> 2 [ label="CM-4127--198,111 kms" style="bold" ];
+  2 -> 4 [ label="CM-4127--267,342 kms" style="bold" ];
+  4 -> 2 [ label="CM-4127--267,342 kms" style="bold" ];
+  3 -> 4 [ label="N-301--161,784 kms" style="bold" ];
+  4 -> 3 [ label="N-301--161,784 kms" style="bold" ];
+  4 -> 5 [ label="N-320--135,213 kms" style="bold" ];
+  5 -> 4 [ label="N-320--135,213 kms" style="bold" ];
+}

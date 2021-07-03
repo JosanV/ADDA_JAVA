@@ -1,0 +1,87 @@
+	//HECHOS PARA EL FICHERO QUE TENIA NUMEROS NEGATIVOS Y DIVIDIA ENTRE 0.
+	//Iterativo
+//	public static Tuple2<Integer, Integer> ejercicio5Iterativo(int a, int b) {
+//		Tuple2<Integer, Integer> res = Tuple.create(0, 0);
+//		int acum = 0;
+//		int auxA = Math.abs(a);
+//		int auxB = Math.abs(b);
+//		while(auxA >= auxB) {
+//			acum = acum + 1;
+//			auxA -= auxB;
+//		}
+//		if(a < 0) {
+//			if(b < 0) {
+//				auxA = -auxA;
+//			} else {
+//				acum = -acum;
+//				auxA = -auxA;
+//			}
+//		} else {
+//			if(b < 0) {
+//				acum = -acum;
+//			}
+//		}
+//		
+//		res = res.setKey(acum);
+//		res = res.setValue(auxA);
+//		
+//		return res;
+//		
+//	}
+//	
+//	
+//	//Recursivo no final
+//	public static Tuple2<Integer, Integer> ejercicio5RecursivoNoFinal(int a, int b) {
+//		Tuple2<Integer, Integer> res = Tuple.create(0, 0);
+//		int signoA = (int) Math.signum(a);
+//		int signoB = (int) Math.signum(b);
+//		int signoCociente = signoA * signoB;
+//		int auxA = Math.abs(a);
+//		int auxB = Math.abs(b);
+//		
+//		if(auxA < auxB) {
+//			res = Tuple.create(0, a);
+//		} else {
+//			res = ejercicio5RecursivoNoFinal(signoCociente*(auxA-auxB), signoB*b);
+//			res = Tuple.create(res.getV1()+1*signoCociente, signoB*res.getV2());
+//		}
+//		return res;
+//		
+//	}
+//	
+//	
+//	
+//	//Recursivo final
+//	public static Tuple2<Integer, Integer> ejercicio5RecursivoFinal(int a, int b) {
+//		return ejercicio5RecursivoFinalAux(a, b, 0, a, b);
+//	}
+//	
+//	public static Tuple2<Integer, Integer> ejercicio5RecursivoFinalAux(int a, int b, int acum, int origA, int origB) {
+//		
+//		Tuple2<Integer, Integer> res = Tuple.create(0, 0);
+//		a = Math.abs(a);
+//		b = Math.abs(b);
+//		
+//		if(a < b) {		//Cadena de condicionales para saber los signos del resultado
+//			if(origA < 0) {
+//				if(origB < 0) {
+//					a = -a;
+//				} else {
+//					acum = -acum;
+//					a = -a;
+//				}
+//			} else {
+//				if(origB < 0) {
+//					acum = -acum;
+//				}
+//			}
+//			
+//			res = res.setKey(acum);
+//			res = res.setValue(a);
+//		} else {
+//			acum++;
+//			res = ejercicio5RecursivoFinalAux(a-b, b, acum, origA, origB);
+//		}
+//		return res;
+//		
+//	}
